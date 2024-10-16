@@ -5,7 +5,7 @@ export default function CallToAction() {
   const navigate = useNavigate(); // Inicializa el hook
 
   const handleContactClick = () => {
-    navigate("/contact"); // Redirige a la página de contacto
+    navigate("/contact");
   };
 
   return (
