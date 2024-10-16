@@ -7,17 +7,17 @@ export default function Projects() {
         </h2>
         <div className="grid grid-cols-1 gap-8 mx-4 md:grid-cols-3">
           <img
-            src="/src/assets/imagen-6.jpg"
+            src="/assets/imagen-6.jpg" // Ruta actualizada
             alt="Proyecto 1"
             className="w-full h-60 rounded-2xl shadow-xl"
           />
           <img
-            src="/src/assets/imagen-7.jpg"
+            src="/assets/imagen-7.jpg" // Ruta actualizada
             alt="Proyecto 3"
             className="w-full h-60 rounded-2xl shadow-xl"
           />
           <img
-            src="/src/assets/imagen-8.jpg"
+            src="/assets/imagen-8.jpg" // Ruta actualizada
             alt="Proyecto 4"
             className="w-full h-60 rounded-2xl shadow-xl"
           />

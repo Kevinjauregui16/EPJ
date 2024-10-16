@@ -9,7 +9,7 @@ export default function Galery() {
           {/* Imagen grande */}
           <div className="col-span-2 row-span-2">
             <img
-              src="/src/assets/imagen-5.jpg"
+              src="/assets/imagen-5.jpg"  // Ruta actualizada
               alt="Imagen Grande"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -18,28 +18,28 @@ export default function Galery() {
           {/* Imágenes más pequeñas */}
           <div>
             <img
-              src="/src/assets/imagen-8.jpg"
+              src="/assets/imagen-8.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           <div>
             <img
-              src="/src/assets/imagen-2.jpg"
+              src="/assets/imagen-2.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           <div>
             <img
-              src="/src/assets/imagen-6.jpg"
+              src="/assets/imagen-6.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           <div>
             <img
-              src="/src/assets/imagen-4.jpg"
+              src="/assets/imagen-4.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -48,7 +48,7 @@ export default function Galery() {
           {/* Otra imagen grande */}
           <div className="col-span-2">
             <img
-              src="/src/assets/imagen-7.jpg"
+              src="/assets/imagen-7.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
@@ -57,14 +57,14 @@ export default function Galery() {
           {/* Imágenes adicionales pequeñas */}
           <div>
             <img
-              src="/src/assets/imagen-9.jpg"
+              src="/assets/imagen-9.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
           <div>
             <img
-              src="/src/assets/imagen-10.jpg"
+              src="/assets/imagen-10.jpg"  // Ruta actualizada
               alt="Imagen"
               className="w-full h-full object-cover rounded-2xl"
             />

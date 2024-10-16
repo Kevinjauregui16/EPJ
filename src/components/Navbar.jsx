@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/epj.jpg"; // Ajusta la ruta según tu estructura
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -37,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Link to="/">
             <img
-              src={logo}
+              src="/assets/epj.jpg" // Ruta actualizada
               alt="Estructuras y Proyectos Logo"
               className="w-auto h-10"
             />

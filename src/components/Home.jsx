@@ -1,5 +1,4 @@
 import React from "react";
-import hero from "../assets/hero.jpg"; // Asegúrate de que esta ruta sea correcta
 import { useNavigate } from "react-router-dom"; // Importa el hook de navegación
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen relative">
       <section
         className="h-screen bg-center bg-cover"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(/assets/hero.jpg)` }} // Ruta actualizada
       >
         <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50">
           <h1 className="mb-4 mt-14 text-4xl font-bold text-center text-white md:text-6xl">
