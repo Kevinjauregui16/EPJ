@@ -9,7 +9,7 @@ export default function CallToAction() {
   };
 
   return (
-    <div className="bg-naranja py-8">
+    <div className="bg-naranja py-8 px-4 md:px-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Frase */}
         <h2 className="text-white text-2xl text-center md:text-3xl font-semibold mb-4 md:mb-0">

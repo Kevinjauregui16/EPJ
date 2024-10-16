@@ -1,7 +1,7 @@
 export default function Services() {
   return (
-    <section id="services" className="py-12">
-      <div className="container px-4 mx-auto">
+    <section className="py-12">
+      <div className="container px-4 md:px-20 mx-auto">
         <h2 className="mb-6 text-3xl font-bold text-center text-gray-400">
           Nuestros Servicios
         </h2>

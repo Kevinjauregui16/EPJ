@@ -1,7 +1,7 @@
 export default function History() {
   return (
-    <div className="container mx-auto py-8 px-6 mt-20 md:mt-28 text-gray-500">
-      <h1 className="text-3xl font-bold mb-4">Nuestra Historia</h1>
+    <div className="container mx-auto py-8 px-6 mt-20 md:mt-28 text-gray-400">
+      <h1 className="text-3xl font-bold mb-4 text-center">Nuestra Historia</h1>
       <p className="text-lg leading-relaxed">
         Estructuras y Proyectos de Jalisco S.A de C.V fue fundada el 26 de enero de 1999 por el Sr. Rafael Cervantes Magaña. Asociado con sus hijos, logró establecer una empresa constructora que ha crecido tanto en maquinaria y equipo como en talento humano, destacándose en el mercado local, regional y nacional.
       </p>

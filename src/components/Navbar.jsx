@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/epj.jpg"; // Ajusta la ruta según tu estructura
-import { useNavigate } from "react-router-dom"; // Importa el hook de navegación
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Estado para el menú móvil
   const [visible, setVisible] = useState(true); // Estado para manejar la visibilidad de la navbar
-  const navigate = useNavigate(); // Inicializa el hook
-
-  const handleNavigateHome = () => {
-    navigate("/"); // Redirige a la página de inicio
-  };
-
-  const handleNavigateContact = () => {
-    navigate("/contact"); // Redirige a la página de contacto
-  };
 
   useEffect(() => {
     let lastScrollY = window.scrollY; // Guarda la posición del scroll
@@ -45,35 +35,26 @@ export default function Navbar() {
       <div className="container mx-auto max-w-screen-lg flex items-center justify-between px-4 py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <a onClick={handleNavigateHome}>
+          <Link to="/">
             <img
               src={logo}
               alt="Estructuras y Proyectos Logo"
               className="w-auto h-10"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Links de navegación */}
         <ul className="hidden md:flex space-x-8 cursor-pointer">
           <li>
-            <a
-              onClick={handleNavigateHome}
+            <Link
+              to="/"
               className="relative font-medium text-gray-500 hover:text-naranja transition-colors group"
             >
               Inicio
               <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-naranja transition-all duration-500 group-hover:w-full"></span>
-            </a>
+            </Link>
           </li>
-          {/* <li>
-            <a
-              href="#services"
-              className="relative font-medium text-gray-500 hover:text-naranja transition-colors group"
-            >
-              Servicios
-              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-naranja transition-all duration-500 group-hover:w-full"></span>
-            </a>
-          </li> */}
           <li>
             <Link
               to="/nuestro-trabajo"
@@ -84,13 +65,22 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <a
-              onClick={handleNavigateContact} // Cambiamos a una función para redirigir a la página de contacto
+            <Link
+              to="/galery"
+              className="relative font-medium text-gray-500 hover:text-naranja transition-colors group"
+            >
+              Galeria
+              <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-naranja transition-all duration-500 group-hover:w-full"></span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
               className="relative font-medium text-gray-500 hover:text-naranja transition-colors group"
             >
               Contacto
               <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-naranja transition-all duration-500 group-hover:w-full"></span>
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -123,28 +113,17 @@ export default function Navbar() {
         <div className="md:hidden">
           <ul className="px-4 pb-4 space-y-2">
             <li>
-              <a
-                onClick={() => {
-                  handleNavigateHome();
-                  setIsOpen(false);
-                }}
-                className="block font-medium text-gray-600 hover:text-gray-900"
-              >
-                Inicio
-              </a>
-            </li>
-            {/* <li>
-              <a
-                href="#services"
+              <Link
+                to="/"
                 className="block font-medium text-gray-600 hover:text-gray-900"
                 onClick={() => setIsOpen(false)}
               >
-                Servicios
-              </a>
-            </li> */}
+                Inicio
+              </Link>
+            </li>
             <li>
               <Link
-                to="/nuestros-trabajos"
+                to="/nuestro-trabajo"
                 className="block font-medium text-gray-600 hover:text-gray-900"
                 onClick={() => setIsOpen(false)}
               >
@@ -152,15 +131,22 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a
-                onClick={() => {
-                  handleNavigateContact();
-                  setIsOpen(false);
-                }}
+              <Link
+                to="/galery"
                 className="block font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsOpen(false)}
+              >
+                Galeria
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="block font-medium text-gray-600 hover:text-gray-900"
+                onClick={() => setIsOpen(false)}
               >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
